@@ -30,14 +30,14 @@ public class LightBoard
       for(int i=0;i<lights.length;i++)
         if(lights[row][col]==true)
           h++;
-   lights[row][col]=h%2!=0;
+   return h%2!=0;
     }
  if (lights[row][col]==false){
     int h=0;
       for(int i=0;i<lights.length;i++)
         if(lights[row][col]==true)
           h++;
-   lights[row][col]=h%3==0;
+   return=h%3==0;
   }
   }
   public boolean[][] getLights()
