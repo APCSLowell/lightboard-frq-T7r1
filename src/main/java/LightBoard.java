@@ -10,8 +10,8 @@ public class LightBoard
    */
   public LightBoard(int numRows, int numCols)
   {
-    for(int i=0;i<lights.length;i++)
-      for (int u=0;u<lights.length;u++)
+    for(int i=0;i<numRows;i++)
+      for (int u=0;u<numCols;u++)
         if(Math.random()<.4)
           lights[i][u]=true;
     else lights[i][u]=false;
@@ -27,14 +27,14 @@ public class LightBoard
     /* to be implemented in part (b) */
     if (lights[row][col]==true){
     int h=0;
-      for(int i=0;i<numCols;i++)
+      for(int i=0;i<lights.length;i++)
         if(lights[row][col]==true)
           h++;
    lights[row][col]=h%2!=0;
     }
  if (lights[row][col]==false){
     int h=0;
-      for(int i=0;i<numCols;i++)
+      for(int i=0;i<lights.length;i++)
         if(lights[row][col]==true)
           h++;
    lights[row][col]=h%3==0;
