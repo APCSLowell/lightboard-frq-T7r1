@@ -39,6 +39,7 @@ public class LightBoard
           h++;
    return h%3==0;
   }
+    return lights[row][col];
   }
   public boolean[][] getLights()
   {
