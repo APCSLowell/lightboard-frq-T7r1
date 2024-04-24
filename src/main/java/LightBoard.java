@@ -10,7 +10,11 @@ public class LightBoard
    */
   public LightBoard(int numRows, int numCols)
   {
-    /* to be implemented in part (a) */
+    for(int i=0;i<numRows;i++)
+      for (int u=0;u<numCols;u++)
+        if(Math.random()<.4)
+          lights[i][u]=true;
+    else lights[i][u]=false;
 
   }
 
