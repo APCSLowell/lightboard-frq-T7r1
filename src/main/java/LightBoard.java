@@ -29,14 +29,14 @@ public class LightBoard
     if (lights[row][col]==true){
     int h=0;
       for(int i=0;i<lights.length;i++)
-        if(lights[row][col]==true)
+        if(lights[i][col]==true)
           h++;
    return h%2!=0;
     }
  if (lights[row][col]==false){
     int h=0;
       for(int i=0;i<lights.length;i++)
-        if(lights[row][col]==true)
+        if(lights[i][col]==true)
           h++;
    return h%3==0;
   }
