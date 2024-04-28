@@ -10,6 +10,7 @@ public class LightBoard
    */
   public LightBoard(int numRows, int numCols)
   {
+    lights=new boolean[numRows][numCols];
     for(int i=0;i<numRows;i++)
       for (int u=0;u<numCols;u++)
         if(Math.random()<.4)
